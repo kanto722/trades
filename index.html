@@ -11,21 +11,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="header-content">
-          <img src="./image/sabio-logo.png" alt="SabioTrade Logo" class="logo" />
-          <div class="header-right">
+          <img
+            src="./image/sabio-logo.svg"
+            alt="SabioTrade Logo"
+            class="logo"
+          />
+          <div class="header-right media-none">
             <img
-              src="./image/investing-logo.png"
+              src="./image/investing-logo.svg"
               alt="Investing.com Logo"
               class="investing-logo"
             />
           </div>
           <div class="lang-switch">
-            <img class="lang-switch_img" src="./image/Flag.png" alt="" />
+            <img class="lang-switch_img" src="./image/flag.svg" alt="" />
             <span class="lang-switch_text">ENG</span>
             <img
               class="lang-switch_arrow"
@@ -34,6 +39,13 @@
             />
           </div>
         </div>
+      </div>
+      <div class="header-right desktop-none">
+        <img
+          src="./image/investing-logo.svg"
+          alt="Investing.com Logo"
+          class="investing-logo"
+        />
       </div>
     </header>
     <main>
@@ -59,13 +71,16 @@
               /></a>
             </div>
             <div class="dashboard">
-              <img src="./image/Ellipse.png" alt="" class="dashboard__ellipse" />
               <img
-                src="./image/Dashboard.png"
+                src="./image/Ellipse.png"
+                alt=""
+                class="dashboard__ellipse"
+              />
+              <img
+                src="./image/Dashboards.svg"
                 alt="Dashboard Image"
                 class="dashboard__image"
               />
-              <a href="#" class="btn-secondary">Request a payout</a>
             </div>
           </div>
         </div>
@@ -78,7 +93,7 @@
               <p class="profits-text">80-90% Profit share</p>
             </div>
             <div class="profits-item">
-              <img src="./image/svg/like.svg" alt="" class="profits-icon" />
+              <img src="./image/like.png" alt="" class="profits-icon" />
               <p class="profits-text">
                 Funded accounts<br />
                 $20,000-$200,000
@@ -97,34 +112,40 @@
             <p class="howstart-title">How to start?</p>
             <div class="howstart-list">
               <div class="howstart-item">
-                <div class="howstart-item_number">1</div>
-                <img
-                  src="./image/svg/Point.svg"
-                  alt=""
-                  class="howstart-item_icon"
-                />
+                <div class="howstart-rows">
+                  <div class="howstart-item_number">1</div>
+                  <img
+                    src="./image/svg/Point.svg"
+                    alt=""
+                    class="howstart-item_icon"
+                  />
+                </div>
                 <p class="howstart-item_text">
                   Choose an account type and buy a challenge
                 </p>
               </div>
               <div class="howstart-item">
-                <div class="howstart-item_number">2</div>
-                <img
-                  src="./image/svg/Point.svg"
-                  alt=""
-                  class="howstart-item_icon"
-                />
+                <div class="howstart-rows">
+                  <div class="howstart-item_number">2</div>
+                  <img
+                    src="./image/svg/Point.svg"
+                    alt=""
+                    class="howstart-item_icon"
+                  />
+                </div>
                 <p class="howstart-item_text">
                   Prove your trading skills during the assessment
                 </p>
               </div>
               <div class="howstart-item">
-                <div class="howstart-item_number">3</div>
-                <img
-                  src="./image/svg/Point.svg"
-                  alt=""
-                  class="howstart-item_icon"
-                />
+                <div class="howstart-rows">
+                  <div class="howstart-item_number">3</div>
+                  <img
+                    src="./image/svg/Point.svg"
+                    alt=""
+                    class="howstart-item_icon"
+                  />
+                </div>
                 <p class="howstart-item_text">
                   Get a funded account and start earning
                 </p>
@@ -147,7 +168,6 @@
             <p class="video-title">What is Sabiotrade?</p>
             <div class="video-wrap">
               <img src="./image/plug-video.png" alt="" class="video-plug" />
-              <iframe src="" frameborder="0"></iframe>
             </div>
           </div>
         </div>
@@ -172,6 +192,7 @@
               </div>
             </div>
             <img src="./image/svg/popular.svg" alt="" class="price-arrow" />
+
             <div class="price-list">
               <div class="price-item">
                 <p class="price-item_title">Standard</p>
@@ -183,7 +204,7 @@
                 <span class="price-item_line"></span>
                 <p class="price-item_sum">$119</p>
                 <p class="price-item_subsum">One-Time Fee</p>
-                <a href="" class="price-item_button">Get funded</a>
+                <a href="" class="price-item_button button-media">Get funded</a>
               </div>
               <div class="price-item focus-item">
                 <p class="price-item_title">Premium</p>
@@ -195,7 +216,7 @@
                 <span class="price-item_line"></span>
                 <p class="price-item_sum">$289</p>
                 <p class="price-item_subsum">One-Time Fee</p>
-                <a href="" class="price-item_button focus-btn"
+                <a href="" class="price-item_button focus-btn button-media"
                   >Get funded now</a
                 >
               </div>
@@ -209,54 +230,66 @@
                 <span class="price-item_line"></span>
                 <p class="price-item_sum">$939</p>
                 <p class="price-item_subsum">One-Time Fee</p>
-                <a href="" class="price-item_button">Get funded</a>
+                <a href="" class="price-item_button button-media">Get funded</a>
               </div>
             </div>
             <p class="price-bottom-text">
               All Plans Include Premium Education Trading Signals
             </p>
+            <a href="" class="price-item_button focus-btn button-desktop"
+              >Get funded now</a
+            >
           </div>
         </div>
       </section>
       <section class="info">
         <div class="container">
           <div class="info-content">
-            <p class="info-title">What you will get</p>
-            <div class="info-one">
-              <div class="info-item">
-                <img src="./image/one.png" alt="" class="info-item_image" />
-                <p class="info-item_text">
-                  Advanced trading tools: over 100 built-in<br />
-                  indicators, widgets, and alerts.
-                </p>
+            <p class="info-title">
+              What you will<br />
+              get
+            </p>
+            <div class="info-wrappers">
+              <div class="info-one">
+                <div class="info-item">
+                  <img src="./image/one.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">
+                    Advanced trading tools: over 100 built-in<br />
+                    indicators, widgets, and alerts.
+                  </p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/two.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">Free training</p>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="./image/Document.png"
+                    alt=""
+                    class="info-item_image"
+                  />
+                  <p class="info-item_text">Access to educational materials</p>
+                </div>
               </div>
-              <div class="info-item">
-                <img src="./image/two.png" alt="" class="info-item_image" />
-                <p class="info-item_text">Free training</p>
-              </div>
-              <div class="info-item">
-                <img src="./image/Document.png" alt="" class="info-item_image" />
-                <p class="info-item_text">Access to educational materials</p>
-              </div>
-            </div>
-            <div class="info-two">
-              <div class="info-item">
-                <img src="./image/three.png" alt="" class="info-item_image" />
-                <p class="info-item_text">
-                  Free mobile app:<br />
-                  includes trading signals
-                </p>
-              </div>
-              <div class="info-item">
-                <img src="./image/four.png" alt="" class="info-item_image" />
-                <p class="info-item_text">Fast payouts</p>
-              </div>
-              <div class="info-item">
-                <img src="./image/five.png" alt="" class="info-item_image" />
-                <p class="info-item_text">
-                  Simple rules:<br />
-                  you trade, we take the risks. You profit, we profit
-                </p>
+              <div class="info-two">
+                <div class="info-item">
+                  <img src="./image/three.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">
+                    Free mobile app:<br />
+                    includes trading signals
+                  </p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/four.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">Fast payouts</p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/five.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">
+                    Simple rules:<br />
+                    you trade, we take the risks. You profit, we profit
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -265,213 +298,226 @@
       <section class="leaderboard">
         <div class="container">
           <div class="leaderboard-content">
-            <p class="leaderboard-title">Sabio’s leaderboard</p>
-            <div class="leaderboard-table">
-              <div class="leaderboard-header">
-                <div class="leaderboard-cell">Rank</div>
-                <div class="leaderboard-cell">Name</div>
-                <div class="leaderboard-cell leader-right">Profit</div>
-                <div class="leaderboard-cell leader-right">Equity</div>
-                <div class="leaderboard-cell">Account size</div>
-                <div class="leaderboard-cell leader-center">Gain %</div>
-                <div class="leaderboard-cell">Country</div>
-              </div>
+            <p class="leaderboard-title">Sabio’s<br> leaderboard</p>
+            <div class="leaderboard-container-wrapper">
+              <div class="leaderboard-table">
+                <div class="leaderboard-header">
+                  <div class="leaderboard-cell">Rank</div>
+                  <div class="leaderboard-cell">Name</div>
+                  <div class="leaderboard-cell leader-right">Profit</div>
+                  <div class="leaderboard-cell leader-right">Equity</div>
+                  <div class="leaderboard-cell">Account size</div>
+                  <div class="leaderboard-cell leader-center">Gain %</div>
+                  <div class="leaderboard-cell">Country</div>
+                </div>
 
-              <!-- Повторите блок .leaderboard-row для каждой строки -->
+                <!-- Повторите блок .leaderboard-row для каждой строки -->
+              </div>
+              <div class="leaderboard-table">
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-image">
+                    <div class="leader-wrapper-crown-one">
+                      <img
+                        class="leaderboard-cell__image leader-one"
+                        src="./image/svg//crown1.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar.png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />
+                    Maria Gonzalez
+                  </div>
+                  <div class="leaderboard-cell leader-green">$121,234</div>
+                  <div class="leaderboard-cell leader-number">$221,234</div>
+                  <div class="leaderboard-cell leader-number">$100,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    121%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Spain</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-image">
+                    <div class="leader-wrapper-crown-two">
+                      <img
+                        class="leaderboard-cell__image leader-one"
+                        src="./image/svg//crown2.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(1).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />
+                    Emma Johansson
+                  </div>
+                  <div class="leaderboard-cell leader-green">$71,380</div>
+                  <div class="leaderboard-cell leader-number">$171,380</div>
+                  <div class="leaderboard-cell leader-number">$100,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    71%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Sweden</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-image">
+                    <div class="leader-wrapper-crown-three">
+                      <img
+                        class="leaderboard-cell__image leader-one"
+                        src="./image/svg//crown3.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(2).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />
+                    Peter Müller
+                  </div>
+                  <div class="leaderboard-cell leader-green">$60,261</div>
+                  <div class="leaderboard-cell leader-number">$110,261</div>
+                  <div class="leaderboard-cell leader-number">$50,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    120%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Germany</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">4</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(3).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />James Brown 
+                  </div>
+                  <div class="leaderboard-cell leader-green">$58,985</div>
+                  <div class="leaderboard-cell leader-number">$158,985</div>
+                  <div class="leaderboard-cell leader-number">$100,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    59%
+                  </div>
+                  <div class="leaderboard-cell leader-number">UK</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">5</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(4).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />Anna Kowalski
+                  </div>
+                  <div class="leaderboard-cell leader-green">$52,894</div>
+                  <div class="leaderboard-cell leader-number">$72,894</div>
+                  <div class="leaderboard-cell leader-number">$20,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    264%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Poland </div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">6</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(5).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />Lars Hansen 
+                  </div>
+                  <div class="leaderboard-cell leader-green">$48,989</div>
+                  <div class="leaderboard-cell leader-number">$148,989</div>
+                  <div class="leaderboard-cell leader-number">$100,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    49%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Denmark</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">7</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(6).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />Sophie Dupont 
+                  </div>
+                  <div class="leaderboard-cell leader-green">$45,805</div>
+                  <div class="leaderboard-cell leader-number">$65,805</div>
+                  <div class="leaderboard-cell leader-number">$20,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    229%
+                  </div>
+                  <div class="leaderboard-cell leader-number">France </div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">8</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(7).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />John O'Reilly 
+                  </div>
+                  <div class="leaderboard-cell leader-green">$41,954</div>
+                  <div class="leaderboard-cell leader-number">$61,954</div>
+                  <div class="leaderboard-cell leader-number">$20,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    209%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Ireland</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">9</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(8).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />Alexei Petrov
+                  </div>
+                  <div class="leaderboard-cell leader-green">$39,478</div>
+                  <div class="leaderboard-cell leader-number">$89,478</div>
+                  <div class="leaderboard-cell leader-number">$50,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    79%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Bulgaria</div>
+                </div>
+                <div class="leaderboard-row">
+                  <div class="leaderboard-cell board-text">10</div>
+                  <div class="leaderboard-cell leader-text">
+                    <img
+                      src="./image/table/avatar(9).png"
+                      alt="Avatar"
+                      class="leaderboard-cell__avatar"
+                    />Emily Clark
+                  </div>
+                  <div class="leaderboard-cell leader-green">$36,399</div>
+                  <div class="leaderboard-cell leader-number">$86,399</div>
+                  <div class="leaderboard-cell leader-number">$50,000</div>
+                  <div class="leaderboard-cell leader-green leader-center">
+                    73%
+                  </div>
+                  <div class="leaderboard-cell leader-number">Canada</div>
+                </div>
+              </div>
             </div>
-            <div class="leaderboard-table">
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-image">
-                  <img
-                    class="leaderboard-cell__image"
-                    src="./image/Leader.png"
-                    alt=""
-                  />
-                </div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar.png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />
-                  Maria Gonzalez
-                </div>
-                <div class="leaderboard-cell leader-green">$121,234</div>
-                <div class="leaderboard-cell leader-number">$221,234</div>
-                <div class="leaderboard-cell leader-number">$100,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  121%
-                </div>
-                <div class="leaderboard-cell leader-number">Spain</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-image">
-                  <img
-                    class="leaderboard-cell__image"
-                    src="./image/Leader(1).png"
-                    alt=""
-                  />
-                </div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(1).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />
-                  Emma Johansson
-                </div>
-                <div class="leaderboard-cell leader-green">$71,380</div>
-                <div class="leaderboard-cell leader-number">$171,380</div>
-                <div class="leaderboard-cell leader-number">$100,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  71%
-                </div>
-                <div class="leaderboard-cell leader-number">Sweden</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-image">
-                  <img
-                    class="leaderboard-cell__image"
-                    src="./image/Leader(2).png"
-                    alt=""
-                  />
-                </div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(2).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />
-                  Peter Müller
-                </div>
-                <div class="leaderboard-cell leader-green">$60,261</div>
-                <div class="leaderboard-cell leader-number">$110,261</div>
-                <div class="leaderboard-cell leader-number">$50,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  120%
-                </div>
-                <div class="leaderboard-cell leader-number">Germany</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">4</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(3).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />James Brown 
-                </div>
-                <div class="leaderboard-cell leader-green">$58,985</div>
-                <div class="leaderboard-cell leader-number">$158,985</div>
-                <div class="leaderboard-cell leader-number">$100,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  59%
-                </div>
-                <div class="leaderboard-cell leader-number">UK</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">5</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(4).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />Anna Kowalski
-                </div>
-                <div class="leaderboard-cell leader-green">$52,894</div>
-                <div class="leaderboard-cell leader-number">$72,894</div>
-                <div class="leaderboard-cell leader-number">$20,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  264%
-                </div>
-                <div class="leaderboard-cell leader-number">Poland </div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">6</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(5).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />Lars Hansen 
-                </div>
-                <div class="leaderboard-cell leader-green">$48,989</div>
-                <div class="leaderboard-cell leader-number">$148,989</div>
-                <div class="leaderboard-cell leader-number">$100,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  49%
-                </div>
-                <div class="leaderboard-cell leader-number">Denmark</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">7</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(6).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />Sophie Dupont 
-                </div>
-                <div class="leaderboard-cell leader-green">$45,805</div>
-                <div class="leaderboard-cell leader-number">$65,805</div>
-                <div class="leaderboard-cell leader-number">$20,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  229%
-                </div>
-                <div class="leaderboard-cell leader-number">France </div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">8</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(7).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />John O'Reilly 
-                </div>
-                <div class="leaderboard-cell leader-green">$41,954</div>
-                <div class="leaderboard-cell leader-number">$61,954</div>
-                <div class="leaderboard-cell leader-number">$20,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  209%
-                </div>
-                <div class="leaderboard-cell leader-number">Ireland</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">9</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(8).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />Alexei Petrov
-                </div>
-                <div class="leaderboard-cell leader-green">$39,478</div>
-                <div class="leaderboard-cell leader-number">$89,478</div>
-                <div class="leaderboard-cell leader-number">$50,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  79%
-                </div>
-                <div class="leaderboard-cell leader-number">Bulgaria</div>
-              </div>
-              <div class="leaderboard-row">
-                <div class="leaderboard-cell board-text">10</div>
-                <div class="leaderboard-cell leader-text">
-                  <img
-                    src="./image/table/avatar(9).png"
-                    alt="Avatar"
-                    class="leaderboard-cell__avatar"
-                  />Emily Clark
-                </div>
-                <div class="leaderboard-cell leader-green">$36,399</div>
-                <div class="leaderboard-cell leader-number">$86,399</div>
-                <div class="leaderboard-cell leader-number">$50,000</div>
-                <div class="leaderboard-cell leader-green leader-center">
-                  73%
-                </div>
-                <div class="leaderboard-cell leader-number">Canada</div>
-              </div>
-            </div>
+            <button class="show-more"><p>Show more</p> <img
+              class="show-more_arrow"
+              src="./image/svg/r-icon.svg"
+              alt=""
+            /></button>
           </div>
         </div>
       </section>
@@ -484,7 +530,7 @@
                 SabioTrade
               </p>
               <a href="#" class="btn-primary"
-                ><p class="btn-primary_text">Buy challenge</p>
+                ><p class="btn-primary_text mobile-primary">Buy challenge</p>
                 <img
                   class="btn-primary_img"
                   src="./image/svg/arrow-right.svg"
@@ -498,18 +544,45 @@
         <div class="container">
           <div class="footer-content">
             <p class="footer-title">Risk Warning</p>
-            <p class="footer-text">The content on this website is for general information and educational purposes only and is not (and cannot be construed or relied upon as) personal advice nor as an offer to buy/sell/subscribe to any of the financial products mentioned herein. No investment objectives, financial circumstances or needs of any individual have been taken into consideration in the preparation or delivery of the content. </p>
-            <p class="footer-text">Financial products are complex, entail risk of loss, may rise and fall, and are impacted by a range of market and economic factors, and you should always obtain professional advice to ensure trading or investing in CFD instruments is suitable for your circumstances, and ensure you obtain, read and understand any applicable terms and conditions.</p>
+            <p class="footer-text">
+              The content on this website is for general information and
+              educational purposes only and is not (and cannot be construed or
+              relied upon as) personal advice nor as an offer to
+              buy/sell/subscribe to any of the financial products mentioned
+              herein. No investment objectives, financial circumstances or needs
+              of any individual have been taken into consideration in the
+              preparation or delivery of the content.
+            </p>
+            <p class="footer-text">
+              Financial products are complex, entail risk of loss, may rise and
+              fall, and are impacted by a range of market and economic factors,
+              and you should always obtain professional advice to ensure trading
+              or investing in CFD instruments is suitable for your
+              circumstances, and ensure you obtain, read and understand any
+              applicable terms and conditions.
+            </p>
             <div class="footer-block">
               <div class="footer-block__content">
-                <a href="" class="footer-block__item link_border">Terms & Conditions</a>
-                <a href="" class="footer-block__item link_border">Privacy policy</a>
-                <a href="" class="footer-block__item link_border">Trader agreement</a>
+                <a href="" class="footer-block__item link_border"
+                  >Terms & Conditions</a
+                >
+                <a href="" class="footer-block__item link_border"
+                  >Privacy policy</a
+                >
+                <a href="" class="footer-block__item link_border"
+                  >Trader agreement</a
+                >
               </div>
               <div class="footer-block__content footer-gap">
-                <a href="" class="footer-block__item"><img src="./image/svg/social_icons.svg" alt=""></a>
-                <a href="" class="footer-block__item"><img src="./image/svg/social_icons(1).svg" alt=""></a>
-                <a href="" class="footer-block__item"><img src="./image/svg/social_icons(2).svg" alt=""></a>
+                <a href="" class="footer-block__item"
+                  ><img src="./image/svg/social_icons.svg" alt=""
+                /></a>
+                <a href="" class="footer-block__item"
+                  ><img src="./image/svg/social_icons(1).svg" alt=""
+                /></a>
+                <a href="" class="footer-block__item"
+                  ><img src="./image/svg/social_icons(2).svg" alt=""
+                /></a>
               </div>
             </div>
             <div class="footer-wrap">
@@ -520,5 +593,6 @@
         </div>
       </section>
     </main>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
