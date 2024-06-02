@@ -18,6 +18,7 @@
 }
 
 @media screen and (max-width: 992px) {
+    
   .main-title {
     font-size: 36px;
     line-height: 43.57px;
@@ -257,6 +258,8 @@ text-align: center;
     border-radius: 12px;
     background: none;
     width: 120px;
+    opacity: 1;
+    pointer-events: all;
   }
   .show-more p{
     font-family: "Inter", sans-serif;

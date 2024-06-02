@@ -129,6 +129,73 @@ display: none;
   margin-left: 4px;
 }
 
+
+
+/* dropdown */
+.lang-switch {
+    position: relative;
+  }
+  
+  .lang-switch .dropdown {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    padding-top: 8px;
+  }
+  .lang-switch .dropdown .dropdown-step {
+    background-color: #2e317c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .lang-switch .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .dropdown-item span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    
+      }
+  .dropdown-item:hover span {
+
+color: #B9BADB;
+
+  }
+  .lang-switch .dropdown-item img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .lang-switch:hover .dropdown,
+  .lang-switch.active .dropdown {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  /* Добавить переход для плавного появления */
+  .lang-switch .dropdown {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .lang-switch:hover .dropdown,
+  .lang-switch.active .dropdown {
+    opacity: 1;
+  }
+/* dropdown */
+
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -201,10 +268,12 @@ display: none;
   text-decoration: none;
   border-radius: 12px;
   color: #fcfdff;
-  max-width: 199px;
+  min-width: 199px;
   cursor: pointer;
-  width: 100%;
   transition: background-color 0.3s;
+}
+.btn-primary-blocks {
+    max-width: 199px;
 }
 .btn-primary_text {
   margin-right: 4px;
@@ -345,7 +414,7 @@ display: none;
   max-width: 262px;
 }
 .howstart-button {
-  max-width: 240px;
+  min-width: 240px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -422,7 +491,7 @@ display: none;
   border: 1px solid #746746;
   display: flex;
   max-width: 286px;
-  max-height: 66px;
+  min-height: 66px;
 }
 .price-header_block-icon {
   width: 100%;
@@ -766,7 +835,8 @@ height: 10px;
     display: none;
   }
   .show-more {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;
