@@ -156,6 +156,8 @@ display: none;
     padding: 12px 16px;
     color: #fff;
     font-size: 14px;
+    text-decoration: none;
+    outline: none;
   }
   
   .dropdown-item span {
@@ -268,9 +270,13 @@ color: #B9BADB;
   text-decoration: none;
   border-radius: 12px;
   color: #fcfdff;
-  min-width: 199px;
+  max-width: 199px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
+}
+.btn-primary:hover {
+    background-color: #0045CC;
+    transition: background-color 0.5s;
 }
 .btn-primary-blocks {
     max-width: 199px;
