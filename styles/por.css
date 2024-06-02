@@ -4,3 +4,7 @@
 .text-content {
     max-width: 576px;
 } 
+.btn-primary {
+    min-width: 199px;
+    max-width: 100%;
+}
