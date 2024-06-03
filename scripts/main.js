@@ -43,5 +43,98 @@ document.addEventListener('DOMContentLoaded', function() {
         langSwitch.classList.remove('active');
       }
     });
+      // Smooth scroll functionality
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  for (const link of links) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+
+  const videoPlug = document.querySelector('.video-plug');
+      const iframe = document.querySelector('iframe');
+
+      videoPlug.addEventListener('click', function() {
+        videoPlug.style.display = 'none';
+        iframe.style.display = 'block';
+        // Запуск видео
+        iframe.src += "&autoplay=1";
+      });
+
+
+      const popup = document.getElementById('popup');
+      const popupContainer = document.querySelector('.popup-container');
+      const popupClose = document.querySelector('.popup-close');
+      const triggerElement = document.getElementById('plans');
+      let popupShown = false;
+
+      // Показать popup при прокрутке до определенного элемента
+      window.addEventListener('scroll', function() {
+        if (!popupShown && isElementInViewport(triggerElement)) {
+          popup.style.display = 'flex';
+          popupShown = true;
+        }
+      });
+
+      // Закрыть popup при клике на кнопку закрытия
+      popupClose.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+
+      // Закрыть popup при клике вне его области
+      window.addEventListener('click', function(event) {
+        if (event.target === popup) {
+          popup.style.display = 'none';
+        }
+      });
+
+      // Проверка, находится ли элемент в видимой области
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      const priceItems = document.querySelectorAll('.price-item');
+  let activeItem = document.querySelector('.focus-item');
+
+  priceItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Убираем фокусные классы с предыдущего активного элемента
+      if (activeItem) {
+        activeItem.classList.remove('focus-item');
+        const focusBtn = activeItem.querySelector('.focus-btn');
+        if (focusBtn) {
+          focusBtn.classList.remove('focus-btn');
+        }
+      }
+
+      // Добавляем фокусные классы к текущему активному элементу
+      item.classList.add('focus-item');
+      const btn = item.querySelector('.price-item_button');
+      if (btn) {
+        btn.classList.add('focus-btn');
+      }
+
+      // Обновляем активный элемент
+      activeItem = item;
+    });
+  });
+
   });
   

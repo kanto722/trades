@@ -1,5 +1,5 @@
 .howstart-item_text {
-    max-width: 313px;
+    max-width: 320px;
 }
 .text-content {
     max-width: 576px;
@@ -7,4 +7,35 @@
 .btn-primary {
     min-width: 199px;
     max-width: 100%;
+}
+.info-item {
+    max-height: 232px;
+    padding: 24px 5px 24px 7px;
+}
+.trade-text {
+    max-width: 272px;
+}
+.price-he-b {
+    max-width: 306px;
+}
+.profits {
+    padding: 70px 0px;
+}
+.trade-wrapper {
+    padding-top: 40px;
+}
+.trade-textes {
+    max-width: 361px;
+}
+.price-header {
+    gap: 30px;
+}
+.trade-fra {
+    max-width: 310px;
+}
+.trade-ger {
+    max-width: 390px;
+}
+.price-header_block {
+    max-width: 293px;
 }

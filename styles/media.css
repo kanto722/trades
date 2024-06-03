@@ -55,13 +55,24 @@
   .info-one {
     grid-template-columns: 264px 264px 264px;
     gap: 16px;
+    margin-bottom: 0;
+    margin-right: 16px;
+    display: none;
 }
 .info-two {
     grid-template-columns: 264px 264px 264px;
     gap: 16px;
+    display: none;
+}
+.info-mobile {
+  display: grid;
+        grid-template-columns: 264px 264px 264px 264px 264px 264px;
+        overflow-x: scroll;
+  gap: 16px;
 }
 .info-wrappers {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     overflow-x: scroll;
     overscroll-behavior-x: auto;
@@ -162,7 +173,13 @@ margin-bottom: 40px;
 text-align: center;
 
   }
-
+  .video-wrap {
+    height: 340px;
+  }
+  iframe {
+    height: 340px;
+        width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -293,6 +310,46 @@ font-size: 16px;
 line-height: 19.36px;
 
   }
+  .footer-block {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 16px;
+  }
+  .footer-block__content {
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 20px;
+  }
+  .footer-gap {
+    flex-direction: row;
+  }
+  .footer-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-wrap__date {
+    text-align: left;
+  }
+  .popup-container {
+    max-width: 280px;
+    height: 406px;
+  }
+  .popup-title {
+font-size: 42px;
+line-height: 50.4px;
+
+  }
+  .popup-title br {
+    display: none;
+  }
+  .popup-close {
+    width: 24px;
+    height: 24px;
+    top: 32px;
+    right: 32px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -363,28 +420,21 @@ max-width: 258px;
     display: none;
   }
   .mobile-primary {
-    max-width: 184px;
+    max-width: 188px;
   }
-  .footer-block {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 16px;
-  }
-  .footer-block__content {
-    flex-direction: column;
-    gap: 17px;
-    margin-bottom: 20px;
-  }
-  .footer-gap {
-    flex-direction: row;
-  }
-  .footer-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+  
+  
   .dashboard__ellipse  {
     left: 0;
+  }
+  iframe {
+    max-width: 284px;
+    height: 159px;
+  }
+  .video-wrap {
+    max-width: 284px;
+    height: 159px;
+
+
   }
 }

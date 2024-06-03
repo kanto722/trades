@@ -44,8 +44,8 @@
             />
           </div>
           <div class="lang-switch">
-            <img class="lang-switch_img" src="./image/flag.svg" alt="" />
-            <span class="lang-switch_text">ENG</span>
+            <img class="lang-switch_img" src="./image/Flag4.svg" alt="" />
+            <span class="lang-switch_text">FRA</span>
             <img
               class="lang-switch_arrow"
               src="./image/svg/arrow-down.svg"
@@ -113,7 +113,7 @@
                 class="dashboard__ellipse"
               />
               <img
-                src="./image/Dashboards.svg"
+                src="./image/Dashboard-t.png"
                 alt="Dashboard Image"
                 class="dashboard__image"
               />
@@ -206,6 +206,16 @@
             <p class="video-title">Qu'est-ce que Sabiotrade ?</p>
             <div class="video-wrap">
               <img src="./image/plug-video.png" alt="" class="video-plug" />
+              <iframe
+                width="940"
+                height="528"
+                src="https://www.youtube.com/embed/4tzZFYlw8Ps?si=MTM4g_3ZGWKRrucI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -215,8 +225,8 @@
           <div class="price-content">
             <div class="price-header">
               <p class="price-header_title">
-                Tariffe secondo le tue esigenze. Scegli quella Tarifs selon vos
-                exigences. Choisissez le bon
+                Tariffe secondo le tue esigenze.<br> Scegli quella Tarifs selon vos
+                exigences.<br> Choisissez le bon
               </p>
               <div class="price-header_block">
                 <img
@@ -232,7 +242,7 @@
             </div>
             <img src="./image/svg/popular.svg" alt="" class="price-arrow" />
 
-            <div class="price-list">
+            <div class="price-list" id="plans">
               <div class="price-item">
                 <p class="price-item_title">Standard</p>
                 <span class="price-item_line"></span>
@@ -345,6 +355,45 @@
                     Règles simples :<br />
                     vous tradez, nous prenons les risques. Vous profitez, nous profitons
                   </p>
+                </div>
+              </div>
+              <div class="info-mobile">
+                <div class="info-item">
+                  <img src="./image/five.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">
+                    Simple rules:<br />
+                    you trade, we take the risks. You profit, we profit
+                  </p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/two.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">Free training</p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/four.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">Fast payouts</p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/one.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">
+                    Advanced trading tools: over 100 built-in<br />
+                    indicators, widgets, and alerts.
+                  </p>
+                </div>
+                <div class="info-item">
+                  <img src="./image/three.png" alt="" class="info-item_image" />
+                  <p class="info-item_text">
+                    Free mobile app:<br />
+                    includes trading signals
+                  </p>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="./image/Document.png"
+                    alt=""
+                    class="info-item_image"
+                  />
+                  <p class="info-item_text">Access to educational materials</p>
                 </div>
               </div>
             </div>
@@ -589,7 +638,7 @@
         <div class="container">
           <div class="trade-content">
             <div class="trade-wrapper">
-              <p class="trade-text">
+              <p class="trade-text trade-fra">
                 Commencez à trader avec<br />
                 SabioTrade
               </p>
@@ -654,22 +703,28 @@
               </div>
               <div class="footer-block__content footer-gap">
                 <a
-                  href="https://www.instagram.com/sabiotrade/"
-                  target="_blank"
-                  class="footer-block__item"
-                  ><img src="./image/svg/social_icons.svg" alt=""
-                /></a>
-                <a
                   href="https://discord.gg/fw77jeeun9"
                   target="_blank"
                   class="footer-block__item"
-                  ><img src="./image/svg/social_icons(1).svg" alt=""
+                  ><img src="./image/svg/discrord.svg" alt=""
                 /></a>
                 <a
                   href="https://t.me/sabiotrade"
                   target="_blank"
                   class="footer-block__item"
-                  ><img src="./image/svg/social_icons(2).svg" alt=""
+                  ><img src="./image/svg/tg.svg" alt=""
+                /></a>
+                <a
+                  href="https://www.instagram.com/sabiotrade/"
+                  target="_blank"
+                  class="footer-block__item"
+                  ><img src="./image/svg/inst.svg" alt=""
+                /></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100075852953720"
+                  target="_blank"
+                  class="footer-block__item"
+                  ><img src="./image/svg/face.svg" alt=""
                 /></a>
               </div>
             </div>
@@ -680,9 +735,25 @@
                 class="footer-wrap__mail"
                 >support@sabiotrade.com</a
               >
-              <p class="footer-wrap__date">Sabio Trade, 2021–2022</p>
+              <div class="footer-wrap__date">
+                <p>CODEVIL IT ENGINEERING LIMITED 2021-2024</p>
+                <p>
+                  registered with company number 680139 at 2c, Grangegorman
+                  Lower, Smithfield, Dublin, Ireland, D07a433
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="popup" id="popup">
+        <div class="popup-container popup-spa">
+          <img src="./image/svg/close.svg" alt="" class="popup-close">
+          <p class="popup-title">Obtenez<span>25%</span> de réduction sur tous les tarifs!</p>
+          <p class="popup-subtitle">Utilisez le code</p>
+          <img src="./image/svg/take.svg" alt="" class="popup-text">
+          <p class="popup-subtext">lors du paiement</p>
+          <img src="./image/svg/sets.svg" alt="" class="popup-image">
         </div>
       </section>
     </main>
