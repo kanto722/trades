@@ -1068,3 +1068,6 @@ flex-direction: column;
   z-index: 1;
   pointer-events: none;
 }
+.btn-primary-block-fra {
+  min-width: 197px;
+}
