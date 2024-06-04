@@ -318,6 +318,7 @@ line-height: 19.36px;
   }
   .footer-block__content {
     flex-direction: column;
+    align-items: flex-start;
     gap: 17px;
     margin-bottom: 20px;
   }
