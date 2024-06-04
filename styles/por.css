@@ -43,4 +43,13 @@
     .info-item_text {
         font-size: 16px !important;
     }
+    .info-item_image {
+        height: 41px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .trade-text {
+        font-size: 24px !important;
+        line-height: 33px !important;
+    }
 }
